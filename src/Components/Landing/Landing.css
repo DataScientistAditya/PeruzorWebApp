@@ -1,0 +1,200 @@
+.mediaViewInfo {
+	--web-view-name: LandingPageAISpeech;
+	--web-view-id: LandingPageAISpeech;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: LandingPageAISpeech;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#LandingPageAISpeech {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: LandingPageAISpeech;
+	--web-view-id: LandingPageAISpeech;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+#Background {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Welcome{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 60%;
+    top:30%;
+}
+#Welcome_to_Peruzor {
+	filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+	white-space: nowrap;
+	text-align: left;
+	font-family: Impact;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 84px;
+	color: rgba(230,230,230,1);
+    position: relative;
+    left: 0;
+}
+#Where_Transformation_meets_Rea {
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(230,230,230,1);
+    position: relative;
+    left: 0;
+}
+
+.GetStartedButton{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #7EFFD3);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 2% 8%;
+    position: relative;
+    margin-top: 2%;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    cursor: pointer;
+}
+#BackGround_Mobile{
+    display: none;
+}
+#BackGround_Small_Mobile{
+    display: none;
+}
+#BackGround_bIG_Mobile{
+    display: none;
+}
+
+@media screen  and (max-width:1024px) and (min-width:769px) {
+    .Welcome{
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top:40%;
+    }   
+    
+}
+
+@media screen and (max-width:768px){
+
+    .Welcome{
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top:55%;
+    }   
+    #Welcome_to_Peruzor{
+        font-size: 42px;
+    }
+    
+    
+}
+
+@media screen and (max-width:768px)and (min-width:540px){
+    #BackGround_Mobile{
+        filter: blur(4px);
+        display: block;
+    }
+    #Background{
+        display: none;
+    }
+    #BackGround_Small_Mobile{
+        display: none;
+    }
+    #BackGround_bIG_Mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:539px) {
+    #BackGround_Small_Mobile{
+        filter: blur(2px);
+        display: block;
+    }
+    #BackGround_Mobile{
+       
+        display: none;
+    }
+    #Background{
+        display: none;
+    }
+    #Welcome_to_Peruzor{
+        font-size: 38px;
+    }
+    #Where_Transformation_meets_Rea{
+        font-size: 18px;
+    }
+    #BackGround_bIG_Mobile{
+        display: none;
+    }
+}
+@media screen  and (max-width:912px) and (min-width:820px){
+    #BackGround_Small_Mobile{
+        display: none;
+    }
+    #BackGround_Mobile{
+       
+        display: none;
+    }
+    #Background{
+        display: none;
+    }
+    #Welcome_to_Peruzor{
+        font-size: 38px;
+    }
+    #Where_Transformation_meets_Rea{
+        font-size: 18px;
+    }
+    #BackGround_bIG_Mobile{
+        filter: blur(2px);
+        display: block;
+    }
+    #Welcome_to_Peruzor{
+        font-size: 68px;
+    }
+    #Where_Transformation_meets_Rea{
+        font-size: 35px;
+    }
+    .Welcome{
+        top:55%;
+    }   
+}
+@media screen  and (max-width:1600px)and (min-width:1025PX){
+    .Welcome{
+        top: 40%;
+    }
+    #Welcome_to_Peruzor{
+        font-size: 52px;
+    }  
+    #Where_Transformation_meets_Rea{
+        font-size: 28px;
+    }
+}

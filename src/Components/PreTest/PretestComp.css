@@ -1,0 +1,232 @@
+.ComputerInteractionArea{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.ComputerInteractionArea::-webkit-scrollbar{
+    width: 0;
+}
+.ComputerInteractionArea .ComputerGeneratedText{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    border: 2px solid;
+    border-color: rgb(30, 161, 248);
+    border-radius: 20px;
+    padding: 2% 2%;
+    
+    display: flex;
+}
+
+.ComputerInteractionArea .ComputerGeneratedText .TextOuts{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.ComputerInteractionArea .ComputerGeneratedText .TextOuts::-webkit-scrollbar{
+    width: 0;
+}
+.ComputerInteractionArea .ComputerGeneratedText ul li{
+    list-style: none;
+    margin-top: 2%;
+    width: 90%;
+    position: relative;
+}
+.ComputerInteractionArea .ComputerGeneratedText .ButtonsSpeak{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    padding: 2% 2%;
+}
+.ComputerInteractionArea .ComputerGeneratedText h4{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+.ComputerInteractionArea .ComputerGeneratedText p{
+    font-size: 14px;
+    font-family:  'Roboto', sans-serif;
+    color: black;
+}
+.ComputerInteractionArea .ComputerGeneratedText h6{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    gap: 2px; 
+    color: black;
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+.ComputerInteractionArea .ComputerGeneratedText h6::after{
+    content: "";
+    width: 10px;
+    height: 12px;
+    background: #0c4497;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+.ComputerInteractionArea .TextInputArea{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    margin-top: 2%;
+}
+
+.ComputerInteractionArea .TextInputArea input{
+
+    width: 450px;
+    left: 50px;
+    height: 45%;
+    top:20%;
+    border: 1px solid;
+    border-color: rgb(30, 161, 248);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.ComputerInteractionArea .TextInputArea input:focus{
+    border: 5px solid rgb(30, 161, 248);
+}
+
+.ComputerInteractionArea .TextInputArea .SubmitButton{
+    position: relative;
+    z-index: 2;
+    left: 50px;
+    top: 20%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #7EFFD3);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.ComputerInteractionArea .TextInputArea .Microphone_Starts{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    position: relative;
+    z-index: 4;
+    top: 25%;
+    font-size: 32px;
+    color: rgb(90, 90, 90);
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.Recording{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    padding: 10% 10%;
+    text-align: center;
+}
+
+.Recording ul{
+    display: flex;
+    margin-top: 5%;
+    
+}
+
+.Recording ul button{
+    top:20%;
+    margin-left: 2%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#211653, #7EFFD3);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.Recording audio{
+
+    width: 100%;
+}
+
+.Recording p{
+    font-size: 18px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Speech{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    z-index: 4;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+.SpeakerButton{
+    font-size: 18px;
+    position: sticky;
+    float: right;
+    top:95%;
+}
+.SpeakerBttonli{
+    font-size: 18px;
+    position: relative;
+    float: right;
+    top:95%;
+    color: black;
+}
+
+@media screen and (max-width:539px){
+    .ComputerInteractionArea .TextInputArea .SubmitButton{
+        left: 10px;
+    }
+    .ComputerInteractionArea .TextInputArea input{
+        width: 200px;
+        left: 10px;
+    }
+    .ComputerInteractionArea .TextInputArea .Microphone_Starts{
+        left: -20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:540px) and (min-width:481px) {
+    .ComputerInteractionArea .TextInputArea input{
+        width: 300px;
+        left: 10px;
+    }
+    .ComputerInteractionArea .TextInputArea .Microphone_Starts{
+        left: -20px;
+    }
+    .ComputerInteractionArea .TextInputArea .SubmitButton{
+        left: 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:541px) {
+    .ComputerInteractionArea .TextInputArea input{
+        width: 350px;
+        left: 20px;
+    }
+    .ComputerInteractionArea .TextInputArea .Microphone_Starts{
+        left: -20px;
+    }
+    .ComputerInteractionArea .TextInputArea .SubmitButton{
+        left: 40px;
+        font-size: 16px;
+    }
+}

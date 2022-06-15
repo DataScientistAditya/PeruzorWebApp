@@ -1,0 +1,251 @@
+.mediaViewInfo {
+	--web-view-name: Login;
+	--web-view-id: Login;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Login;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Login {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	--web-view-name: Login;
+	--web-view-id: Login;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-show-by-media-query: true;
+	--web-enable-deep-linking: true;
+}
+#Login_g {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#LoginGroup {
+    filter: drop-shadow(-10px 3px 10px rgba(0, 0, 0, 0.478));
+	position: absolute;
+	width: 60%;
+	height: auto;
+	left: 20%;
+	top: 20%;
+    background-color:rgba(159,159,159,0.412);
+    overflow-y: auto;
+    border-radius: 20px;
+}
+#LoginGroup::-webkit-scrollbar{
+    width: 0;
+}
+#Sign_In {
+	position: relative;
+    left: 5%;
+    top:4%;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Impact;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	color: rgba(255,255,255,1);
+}
+.AuthInputForm{
+    
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    top:7.5%;
+    display: flex;
+    padding: 2% 2%;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.AuthInputForm ul{
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 5% 5%; 
+    
+}
+.AuthInputForm hr{
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    height: auto;
+}
+.AuthInputForm ul .Authform{
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    position: relative;
+}
+.AuthInputForm ul .Authform button{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #3bbff3);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 2% 8%;
+    position: relative;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    cursor: pointer;
+    left: 30%;
+}
+.AuthInputForm ul .Authform .ForgetPass{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.AuthInputForm ul::-webkit-scrollbar{
+    width: 0;
+}
+
+.AuthInputForm ul li{
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 2%;
+    
+}
+
+.AuthInputForm ul li input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 2PX solid;
+    border-color: black;
+}
+.AuthInputForm ul .AccountPasswordForget{
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    position: relative;
+    
+
+}
+
+.AuthInputForm ul .AccountPasswordForget h4{
+    font-size: 22px;
+}
+
+.AuthInputForm ul .AccountPasswordForget button{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #3bbff3);
+    font-size: 18px;
+    font-family:  sans-serif;
+    color: white;
+    padding: 2% 8%;
+    position: relative;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    cursor: pointer;
+    margin-top: 15%;
+}
+@media screen and (max-width:540px){
+    #Sign_In{
+        font-size: 25px;
+    }
+    #LoginGroup{
+        width: 90%;
+        left: 5%;
+        height: 75%;
+        top: 15%;
+    }
+    .AuthInputForm ul li{
+        height: 30px;
+        margin-top: 20px;
+    }
+    .Authform{
+        top:10%;
+        padding: 1%;
+    }
+    .AuthInputForm ul{
+        padding: 2% 2%; 
+    }
+    .AuthInputForm ul .Authform .ForgetPass{
+        font-size: 9px;
+        left: 0;
+    }
+    .AuthInputForm ul .Authform button{
+        left:10%;
+    }
+    .AuthInputForm ul .AccountPasswordForget h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:541px){
+    #LoginGroup{
+        width: 90%;
+        left: 5%;
+        height: 45%;
+        top: 27.5%;
+    }
+    .AuthInputForm ul li{
+        height: 30px;
+    }
+    #Sign_In{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:912px) and (min-width:769px){
+    #LoginGroup{
+        width: 90%;
+        left: 5%;
+        height: 45%;
+        top: 25%;
+    }
+    .AuthInputForm ul li{
+        height: 30px;
+        margin-top: 3%;
+    }
+    .AuthInputForm ul .AccountPasswordForget h4{
+        font-size: 18px;
+    }
+    .AuthInputForm ul .Authform .ForgetPass{
+        font-size: 9px;
+        left: 20%;
+    }
+    #Sign_In{
+        font-size: 42px;
+    }
+   
+}
+
+@media screen and (max-width:1280px) and (min-width:913px){
+    #Sign_In{
+        font-size: 42px;
+    }
+    #LoginGroup{
+        width: 80%;
+        left: 10%;
+        height: 80%;
+        top: 10%;
+    }
+    .AuthInputForm ul li{
+        height: 40px;
+    }
+}

@@ -1,0 +1,183 @@
+li{
+    list-style: none;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: rgb(61, 61, 61);
+}
+ul{
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+}
+.Listshow{
+    margin-left: 20px;
+}
+.Listshow li{
+    margin-top: 5px;
+}
+.Listshow li:hover{
+    background-color: rgb(255, 186, 82);
+}
+.Dashconatainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px 5px;
+    display: flex;
+}
+.sidebar{
+    position:absolute;
+    max-height: 100%;
+    background-color: rgb(189, 189, 189);
+    padding: 20px 20px;
+    filter: drop-shadow(10px 3px 10px rgba(0, 0, 0, 0.478));
+    z-index: 2;
+}
+.contains{
+    position: relative;
+    width:100% ;
+    height: 100%;
+    padding: 20px 20px;
+    overflow-y: auto;
+}
+.contains::-webkit-scrollbar{
+    width: 0;
+}
+.HeaderTable{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    filter: drop-shadow(10px 3px 10px rgba(0, 0, 0, 0.478));
+    overflow: hidden;
+}
+.HeaderItems {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.HeaderItems li{
+    flex-direction: row;
+    display: initial;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.HeaderToken{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.HeaderToken .HeaderItems li .ItemShower{
+    width: 95px;
+    height: 100%;
+    color: white;
+    display: table-caption;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Table{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    filter: drop-shadow(10px 3px 10px rgba(0, 0, 0, 0.478));
+    overflow: hidden;
+    padding: 5px 5px;
+}
+.Table .HeaderItems li{
+    flex-direction: row;
+    display: initial;
+    text-align: center;
+    
+}
+.HeaderItems li .ItemShower{
+    width: 95px;
+    height: 30px;
+    color: white;
+    display: table-caption;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+.HeaderItems li .ItemShower:hover{
+    overflow-x: visible;
+    font-size: 18px;
+}
+.Table hr{
+    width: 100%;
+    border: 1px solid #D9D9D9;
+}
+.ButtonItems{
+    width: 100%;
+    height:50%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.ButtonItems li{
+    flex-direction: row;
+    display: initial;
+    text-align: center;
+}
+
+.ButtonItems li button{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.openclass{
+    position: absolute;
+    z-index: 2;
+}
+.closeclass{
+    position: absolute;
+    z-index: 3;
+    left: 180px;
+}
+.ShowResultPopup{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top:25%;
+    left:25%;
+    background-color: rgb(33, 20, 2);
+    filter: drop-shadow(10px 3px 10px rgba(0, 0, 0, 0.478));
+    border-radius: 10px;
+}
+.closeResclass{
+    float: right;
+    position: relative;
+}
+
+@media screen and (max-width:1024px) {
+	.HeaderItems li{
+        font-size: 12px;
+    }
+    .ButtonItems li button{
+        width: 50px;
+        height: 30px;
+        font-size: 9px;
+    }
+    .ShowResultPopup{
+        width: 90%;
+        height: 50%;
+        top:25%;
+        left:5%;
+    }
+}

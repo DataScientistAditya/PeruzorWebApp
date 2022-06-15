@@ -1,0 +1,245 @@
+.LettersShow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+}
+.LettersShow::-webkit-scrollbar{
+    width: 0;
+}
+.LettersShow p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+.lettercontainer{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    position: relative;
+    display: flex;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+}
+.lettercontainer .lettersUl{
+    width: 90%;
+    position: relative;
+    padding: 7% 4%;
+}
+
+.lettercontainer .speakerul{
+    width: 10%;
+    position: relative;
+    height: 100%;
+}
+
+.lettercontainer .lettersUl .letters{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.lettercontainer .lettersUl .letters h4{
+    font-size: 84px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.lettercontainer .speakerul .SpeakerContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.lettercontainer .speakerul .SpeakerContainer .SpeakerButtonbtn{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    font-size: 18px;
+    float: right;
+    top: 85%;
+    background: transparent;
+    color: white;
+    margin-right: 20%;
+    cursor: pointer;
+    position: relative;
+}
+.MicroPhoneContainer{
+    width: 100%;
+    height:32%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2%;
+    text-align: center;
+    padding: 2% 2%;
+   
+}
+
+.MicroPhoneContainer .Microphone{
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    color: white;
+    background: transparent;
+    font-size: 54px;
+    cursor: pointer;
+}
+
+.LettersShow .Speechcontainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:  rgb(120, 120, 120);
+    z-index: 4;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    
+}
+.LettersShow .Speechcontainer::-webkit-scrollbar{
+    width: 0;
+}
+.LettersShow .StartScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 44, 44);
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    z-index: 4;
+    margin-top: 0;
+}
+.LettersShow .StartScreen p{
+
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2%;
+}
+.LettersShow .StartScreen button{
+    margin-top: 4%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #7EFFD3);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.PopUpResult{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 44, 44);
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    z-index: 4;
+    padding: 4% 4%;
+}
+.LettersShow .FinalPopUpResult{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 44, 44);
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    z-index: 4;
+    padding: 4% 4%;
+}
+
+.PopUpResult .Results{
+    width: 100%;
+    height: 100%;
+    border-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+}
+.FinalPopUpResult .Results{
+    width: 100%;
+    height: 100%;
+    border-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+}
+.NextButton{
+    padding: 2% 2%;
+    border-radius: 10px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #7EFFD3);
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-color: white;
+    cursor: pointer;
+}
+.NextTestButton{
+    padding: 2% 2%;
+    border-radius: 10px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #7EFFD3);
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-color: white;
+    cursor: pointer;
+    
+}
+.PopUpResult .Results p{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.FinalPopUpResult .Results p{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.LetterInstructions{
+    width: 5%;
+    height: 5%;
+    position: relative;
+    background: transparent;
+    float: right;
+    margin-right: 5%;
+}
+.LetterInstructions .LetterInstructionsBtn{
+    background: transparent;
+}
+@media screen and (max-width:414px) {
+	.MicroPhoneContainer .Microphone{
+        font-size: 54px;
+    }
+    .MicroPhoneContainer{
+        margin-top:10%;
+    }
+    .lettercontainer .lettersUl{
+        padding: 20% 5%;
+    }
+}
+
+@media screen and (max-width:912px) and (min-width:540px){
+
+	.MicroPhoneContainer .Microphone{
+        font-size: 64px;
+    }
+    .MicroPhoneContainer{
+        margin-top:8%;
+    }
+    .lettercontainer .lettersUl{
+        padding: 20% 5%;
+    }
+}

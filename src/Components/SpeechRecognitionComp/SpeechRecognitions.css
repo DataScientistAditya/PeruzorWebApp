@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(107, 107, 107, 0.8);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.mircophone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.microphone-icon-container {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: linear-gradient(128deg, #ffffff, #647c88);
+  padding: 20px;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1%;
+}
+.microphone-icon-container.listening::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff81;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%) scale(1.4);
+  border-radius: 50%;
+  animation: listening infinite 1.5s;
+  margin-top: 1%;
+}
+.PopUpStoryShow{
+  position: absolute;
+  background-color: rgb(48, 48, 48);
+  width: 90%;
+  height: 150px;
+  left: 5%;
+  text-align: center;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  border-radius: 20px;
+  overflow-y: auto;
+  padding: 1% 1%;
+  border: 2px solid;
+  border-color: #00e4b2;
+}
+.PopUpStoryShow::-webkit-scrollbar{
+  width:0;
+}
+@keyframes listening{
+  0%{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+.microphone-icon {
+  width: 100%;
+  height: 100%;
+}
+.microphone-status {
+  font-size: 22px;
+  margin-right: 20px;
+  min-width: 215px;
+}
+.btn {
+  border: none;
+  padding: 2% 4%;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 5px #ffffff1a;
+  margin-top: 1%;
+}
+.microphone-result-container {
+  text-align: center;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+
+}
+.microphone-result-text {
+  margin-bottom: 10%;
+  width: 100%;
+  overflow-y: auto;
+}
+.microphone-reset {
+  border: 1px solid #fff;
+  background: none;
+  color: white;
+  width: fit-content;
+  margin-top: 180px;
+}
+.microphone-reset:hover {
+  cursor: not-allowed;
+}
+.Submit{
+  border: 1px solid #fff;
+  background: none;
+  color: white;
+  width: fit-content;
+  margin-top: 180px;
+}
+
+.Buttons{display: flex;}
+
+
+@media screen and (max-width:1023px){
+
+
+  .microphone-icon-container{
+    width: 40px;
+    height: 40px;
+    top:2%;
+  }
+  .microphone-icon-container.listening::before{
+    width: 40px;
+    height: 40px;
+    transform:translate(-10%, -10%) scale(1.4);
+  }
+  .microphone-reset {
+    margin-top: 185px;
+  }
+  .Submit{
+    margin-top: 185px;
+  }
+  .microphone-status{
+    font-size: 12px;
+    min-width: 115px;
+  }
+  @keyframes listening{
+    0%{
+      opacity: 1;
+      transform: translate(-25%, -25%) scale(0.5);
+    }
+    100%{
+      opacity: 0;
+      transform: translate(-25%, -25%) scale(0.8);
+    }
+  }
+
+  .PopUpStoryShow{
+    height: 150px;
+  }
+  
+}

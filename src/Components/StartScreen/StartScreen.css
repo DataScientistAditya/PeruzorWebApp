@@ -1,0 +1,46 @@
+.StartScreen{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 2% 2%;
+    margin-top: 10%;
+    text-align: center;
+    overflow-y: auto;
+}
+.StartScreen::-webkit-scrollbar{
+    width: 0;
+}
+
+.StartScreen li{
+    list-style: none;
+    margin-top: 4%;
+}
+
+.StartScreen li button{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    filter: drop-shadow(-10px 3px 15px rgba(0, 0, 0, 0.549));
+    background: linear-gradient(to right,#003551, #3bbff3);
+    font-family:  sans-serif;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width:912px){
+
+    .StartScreen{
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .StartScreen li button{
+       font-size: 16px;
+    }
+    
+}
